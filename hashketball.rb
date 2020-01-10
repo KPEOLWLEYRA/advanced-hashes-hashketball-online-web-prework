@@ -203,7 +203,7 @@ end
 
 def most_points_scored
   most_points = 0 
-  player = ''
+  player 
   game_hash.each do |key, value|
     value[:players].each do |i|
       points = i[:points]
