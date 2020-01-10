@@ -221,10 +221,10 @@ def winning_team
   home_team_points = 0 
   away_team_points = 0 
   win = ''
-  game_hash[:home][:players][i].each do |i|
+  game_hash[:home][:players].each do |i|
     home_team_points += i[:points]
   end
-  game_hash[:away][:players][i].each do |i|
+  game_hash[:away][:players].each do |i|
     away_team_points += i[:points]
   end
   puts "home points are #{home_team_points} away pts #{away_team_points}"
