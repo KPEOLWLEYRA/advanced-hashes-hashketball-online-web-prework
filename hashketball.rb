@@ -252,6 +252,7 @@ def player_with_longest_name
     long_player
 end
 
+player_with_longest_name
   
   
 # def num_points_scored(player)
