@@ -252,7 +252,7 @@ def player_with_longest_name
     long_player
 end
 
-player_with_longest_name
+def long_name_steals_a_ton? 
   
   
 # def num_points_scored(player)
