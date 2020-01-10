@@ -253,6 +253,24 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton? 
+  most_steals = 0 
+  player = ''
+  game_hash.each do |key, value|
+    value[:players].each do |i|
+      steals = i[:steals]
+      if steals> most_steals
+        player = i[:player_name]
+        most_steals = i[:steals]
+        player
+      end
+      end
+    end
+    if player_with_longest_name == player 
+      return true 
+    else 
+      return false 
+    end 
+  end
   
   
 # def num_points_scored(player)
