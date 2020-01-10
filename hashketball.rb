@@ -210,6 +210,7 @@ def most_points_scored
       if most_points> points 
         player = i[:player_name]
         most_points = i[:points]
+        player
       end
       end
     end
