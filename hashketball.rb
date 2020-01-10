@@ -235,7 +235,20 @@ def winning_team
   end
   win
 end
-    
+  
+def player_with_longest_name
+  long_player = ''
+  game_hash.each do |key, value|
+    value[:players].each do |i|
+      player_name = [:player_name][i]
+      if player_name.length > long_player.length
+        long_player = i[:player_name]
+      end
+      end
+    end
+    long_player
+end
+
   
   
 # def num_points_scored(player)
