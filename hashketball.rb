@@ -240,7 +240,6 @@ def player_with_longest_name
   long_player = ''
   game_hash.each do |key, value|
     value[:players].each do |i|
-      puts [i][:player_name]
       player_name = [i][:player_name]
       play_name_len = player_name.length
       long_player_len = long_player.length
