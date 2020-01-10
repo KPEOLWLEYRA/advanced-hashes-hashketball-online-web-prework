@@ -220,7 +220,7 @@ end
 def winning team 
   home_team_points = 0 
   away_team_points = 0 
-  winning_team = ''
+  win = ''
   game_hash[:home][:players][i].each do |i|
     home_team_points += i[:points]
   end
@@ -229,11 +229,11 @@ def winning team
   end
   puts "home points are #{home_team_points} away pts #{away_team_points}"
   if home_team_points > away_team_points
-    winning_team = game_hash[:home][:team_name]
+    win = game_hash[:home][:team_name]
   else
-    winning_team = game_hash[:away][:team_name]
+    win = game_hash[:away][:team_name]
   end
-  winning_team
+  win
 end
     
   
