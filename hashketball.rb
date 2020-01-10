@@ -192,6 +192,7 @@ def big_shoe_rebounds
     value[:players].each do |i|
         shoe_size = i[:shoe]
         puts "shoe size is #{shoe_size}"
+        puts "biggest_shoe is #{biggest_shoe}"
         if shoe_size > biggest_shoe
           rebounds = i[:rebounds]
           puts "rebounds is #{rebounds}"
