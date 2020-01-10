@@ -212,8 +212,8 @@ def most_points_scored
         most_points = i[:points]
       end
       end
-      player
     end
+    return player
 end
 
 
