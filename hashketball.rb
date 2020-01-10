@@ -191,19 +191,31 @@ def big_shoe_rebounds
   game_hash.each do |key, value|
     value[:players].each do |i|
         shoe_size = i[:shoe]
-        puts "shoe size is #{shoe_size}"
-        puts "biggest_shoe is #{biggest_shoe}"
         if shoe_size > biggest_shoe
           rebounds = i[:rebounds]
-          puts "rebounds is #{rebounds}"
           biggest_shoe = i[:shoe]
-          puts "biggest_shoe is #{biggest_shoe}"
         end
       end
       end
   rebounds
 end
 
+
+def most_points_scored
+  most_points = 0 
+  player = ''
+  game_hash.each do |key, value|
+    value[:players].each do |i|
+      points = i[:points]
+      if most_points> points 
+        player = i[:player_name]
+        most_points = i[:points]
+      end
+      end
+    end
+  end
+  most_points
+end
 
 
 big_shoe_rebounds
