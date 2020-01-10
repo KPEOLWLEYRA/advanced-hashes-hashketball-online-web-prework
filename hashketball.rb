@@ -213,8 +213,8 @@ def most_points_scored
         player
       end
       end
-      return player
     end
+    player
 end
 
 
