@@ -196,7 +196,7 @@ def big_shoe_rebounds
           rebounds = i[:rebounds]
           puts "rebounds is #{rebounds}"
           biggest_shoe = i[:shoe]
-          puts "shoe_size_var is #{shoe_size_var}"
+          puts "biggest_shoe is #{biggest_shoe}"
         end
       end
       end
