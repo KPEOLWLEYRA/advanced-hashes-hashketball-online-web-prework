@@ -187,8 +187,8 @@ end
 
 def big_shoe_rebounds
   rebounds = 0 
+  biggest_shoe = 0
   game_hash.each do |key, value|
-    biggest_shoe = 0 
     value[:players].each do |i|
         shoe_size = i[:shoe]
         puts "shoe size is #{shoe_size}"
